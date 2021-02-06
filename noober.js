@@ -122,30 +122,35 @@ async function pageLoaded() {
   //listen for button and feed input to array sorter
   let button = document.querySelector('#all-filter')
   button.addEventListener('click', async function() {
+    console.log("All Rides clicked")
     let response = await fetch('https://kiei451.com/api/rides.json')
     json = await response.json()
     renderRides(arrayProcesser (json , "All Rides"))
   })
   let button2 = document.querySelector('#noober-pool-filter')
   button2.addEventListener('click', async function() {
+    console.log("Noober Pool clicked")
     let response = await fetch('https://kiei451.com/api/rides.json')
     json = await response.json()
     renderRides(arrayProcesser (json , "Noober Pool"))
   })
   let button3 = document.querySelector('#noober-purple-filter')
   button3.addEventListener('click', async function() {
+    console.log("Noober Purple clicked")
     let response = await fetch('https://kiei451.com/api/rides.json')
     json = await response.json()
     renderRides(arrayProcesser (json , "Noober Purple"))
   })
   let button4 = document.querySelector('#noober-xl-filter')
   button4.addEventListener('click', async function() {
+    console.log("Noober XL clicked")
     let response = await fetch('https://kiei451.com/api/rides.json')
     json = await response.json()
     renderRides(arrayProcesser (json , "Noober XL"))
   })
   let button5 = document.querySelector('#noober-x-filter')
   button5.addEventListener('click', async function() {
+    console.log("Noober X clicked")
     let response = await fetch('https://kiei451.com/api/rides.json')
     json = await response.json()
     renderRides( arrayProcesser (json , "Noober X"))
